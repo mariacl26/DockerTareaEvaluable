@@ -1,1 +1,1 @@
-<?php echo "El mes actual es: " . date("F") . "\n"; ?>
+<?php echo date('F'); ?>
