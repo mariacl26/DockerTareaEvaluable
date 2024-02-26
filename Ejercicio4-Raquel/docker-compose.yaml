@@ -1,5 +1,5 @@
 version: '3'
 services:
    cmatrix: 
-    image: tutum/cmatrix:latest
+    image: jess/cmatrix
     tty: true
