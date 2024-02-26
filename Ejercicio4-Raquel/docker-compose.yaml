@@ -1,0 +1,3 @@
+version: '3' services: cmatrix: 
+    image: tutum/cmatrix:latest tty: 
+    true
