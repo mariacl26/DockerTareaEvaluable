@@ -1,3 +1,13 @@
-pdf.
+# Tarea Evaluable Docker
 
-![image-20240220095641406](./tareaCompleta.assets/image-20240220095641406.png)
+> Despliegue de Aplicaciones Web.
+> 
+
+<aside>
+💡 Raquel Cabezas & María Clemente.
+
+</aside>
+
+---
+
+Enlace al repositorio de GitHub: https://github.com/mariacl26/DockerTareaEvaluable.git
