@@ -3,22 +3,36 @@
 > Raquel Cabezas. 
 
 Desplegar la aplicación cmatrix utilizando docker-compose.
-Entregar las siguientes capturas de pantalla y los comandos empleados para resolver el ejercicio:
+
 **-Captura de pantalla y documento donde se vea el fichero docker-compose.yaml .**
 
-![image-20240226095811791](../../../snap/typora/86/.config/Typora/typora-user-images/image-20240226095811791.png)
+```bash
+sudo nano docker-compose.yaml
+```
+
+![image-20240226095811791](./Ejercicio4.assets/image-20240226095811791.png)
 
 
 
-![image-20240226095729761](../../../snap/typora/86/.config/Typora/typora-user-images/image-20240226095729761.png)
+```bash
+sudo docker-compose up
+```
+
+![image-20240226095729761](./Ejercicio4.assets/image-20240226095729761.png)
 
 **-Captura de pantalla y documento donde se vea la aplicación funcionando. Se valorará conseguir el efecto Greenrain.**
 
 Ejecuto el siguiente comando para entrar en la terminal del contenedor. Y pngo cmatrix para iniciar la aplicación.
 
-![image-20240226100117801](../../../snap/typora/86/.config/Typora/typora-user-images/image-20240226100117801.png)
+```
+sudo docker exec -it cmatrix-container /bas
+```
 
-![image-20240226100024036](../../../snap/typora/86/.config/Typora/typora-user-images/image-20240226100024036.png)
+
+
+![image-20240226100117801](./Ejercicio4.assets/image-20240226100117801.png)
+
+![image-20240226100024036](./Ejercicio4.assets/image-20240226100024036.png)
 
 **-Explicar brevemente cómo funciona esta aplicación.**
 
