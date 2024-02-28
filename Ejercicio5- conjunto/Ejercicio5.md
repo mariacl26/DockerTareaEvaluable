@@ -50,12 +50,74 @@ _Salida del script del mes.php_
 
 ## Bloque de código con el Dockerfile
 
+```bash
+nano Dockerfile
+```
+
+![image-20240228103500814](./Ejercicio5.assets/image-20240228103500814.png)
+
+![image-20240228103411327](./Ejercicio5.assets/image-20240228103411327.png)
 
 
-Captura de pantalla y documento donde se vea el comando que crea la nueva imagen.
 
-Captura de pantalla y documento donde se vea la imagen subida a tu cuenta de Docker Hub.
+#### Captura de pantalla y documento donde se vea el comando que crea la nueva imagen.
 
-Captura de pantalla y documento donde se vea la bajada de la imagen - por parte de otra persona del grupo - y la creación de un contenedor.
+```bash
+docker build -t my-php-web .
+```
 
-Captura de pantalla y documento donde se ve el acceso al navegador con el sitio servido
+![image-20240228104020727](./Ejercicio5.assets/image-20240228104020727.png)
+
+
+
+#### Captura de pantalla y documento donde se vea la imagen subida a tu cuenta de Docker Hub.
+
+_Inicio de sesión en Docker_
+
+```bash
+docker login
+```
+
+![image-20240228104715439](./Ejercicio5.assets/image-20240228104715439.png)
+
+_Imagen_
+
+```bash
+docker tag my-php-web mariialuenngo/my-php-web
+```
+
+![image-20240228104930123](./Ejercicio5.assets/image-20240228104930123.png)
+
+_Subida de la imagen al dockerHub_
+
+```bash
+docker push mariialuenngo/my-php-web
+```
+
+![image-20240228105227583](./Ejercicio5.assets/image-20240228105227583.png)
+
+![image-20240228105356024](./Ejercicio5.assets/image-20240228105356024.png)
+
+#### Captura de pantalla y documento donde se vea la bajada de la imagen - por parte de otra persona del grupo - y la creación de un contenedor.
+
+```bash
+sudo adduser Raquel 
+```
+
+![image-20240228105732867](./Ejercicio5.assets/image-20240228105732867.png)
+
+```
+sudo docker pull mariialuenngo/my-php-web
+```
+
+![image-20240228110330375](./Ejercicio5.assets/image-20240228110330375.png)
+
+```bash
+sudo docker run -d --name webRaquel -p 8001:80 mariialuenngo/my-php-web
+```
+
+![image-20240228110621330](./Ejercicio5.assets/image-20240228110621330.png)
+
+#### Captura de pantalla y documento donde se ve el acceso al navegador con el sitio servido
+
+![image-20240228110705564](./Ejercicio5.assets/image-20240228110705564.png)
